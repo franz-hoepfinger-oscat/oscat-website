@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OSCAT - Open Source Community for Automation Technology</title>
+  
+  <meta name="description" content="OSCAT develops high-quality open-source function libraries (IEC 61131-3) for industrial and building automation. Discover OSCAT Basic, Network, and Building.">
+  <meta name="keywords" content="OSCAT, Open Source, Automation, Building Automation, IEC 61131-3, PLC, Codesys, TwinCAT, Step 7, Wago, Beckhoff">
+  <meta name="author" content="OSCAT Community">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-de">
+
+  <!-- Header Bar -->
+  <header class="header-bar" id="main-header">
+    <a href="#" class="brand-container" id="brand-link" aria-label="OSCAT Home">
+      <img src="img/oscatlogo_ohnetext_300ppi.jpg" alt="OSCAT Logo" class="brand-logo-small">
+      <span class="brand-name">OSCAT</span>
+    </a>
+    
+    <!-- Language Toggle -->
+    <div class="lang-toggle" role="group" aria-label="Language selection">
+      <button class="lang-toggle-btn active" data-lang="de" id="lang-btn-de" onclick="setLanguage('de')" aria-label="Deutsch">DE</button>
+      <button class="lang-toggle-btn" data-lang="en" id="lang-btn-en" onclick="setLanguage('en')" aria-label="English">EN</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="bg-grid"></div>
+    
+    <div class="hero-logo-container scroll-reveal">
+      <img src="img/oscatlogo_ohnetext_300ppi.jpg" alt="OSCAT - Open Source Community for Automation Technology" class="hero-logo">
+    </div>
+    
+    <h1 class="hero-title scroll-reveal delay-100">OSCAT</h1>
+    
+    <div class="hero-subtitle scroll-reveal delay-200">
+      <p lang="de">Open Source Community for Automation Technology 👋</p>
+      <p lang="en">Open Source Community for Automation Technology 👋</p>
+    </div>
+    
+    <div class="hero-subtitle scroll-reveal delay-200" style="font-size: 1.25rem; max-width: 700px; margin-top: -1.5rem;">
+      <p lang="de">Willkommen bei <strong>OSCAT</strong>! Wir sind eine offene Gemeinschaft, die hochwertige Open-Source-Funktionsbibliotheken für die industrielle und gebäudetechnische Automation (IEC 61131-3) entwickelt.</p>
+      <p lang="en">Welcome to <strong>OSCAT</strong>! We are an open-source community developing high-quality function libraries for industrial and building automation (IEC 61131-3).</p>
+    </div>
+    
+    <div class="hero-cta scroll-reveal delay-300">
+      <a href="#libraries" class="btn btn-primary" id="cta-docs">
+        <span lang="de">Bibliotheken erkunden</span>
+        <span lang="en">Explore Libraries</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="https://github.com/eclipse-oscat" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="cta-github">
+        <span>GitHub</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Core Features Section -->
+  <main class="container" id="main-content">
+    <section class="features-container scroll-reveal">
+      
+      <!-- Feature 1: Open Source -->
+      <div class="feature-item" id="feature-os">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3 class="feature-title">
+          <span lang="de">Open Source</span>
+          <span lang="en">Open Source</span>
+        </h3>
+        <p class="feature-desc">
+          <span lang="de">Veröffentlicht unter der Eclipse Public License 2.0 (EPL-2.0). Frei nutzbar, anpassbar und erweiterbar für kommerzielle und private Zwecke.</span>
+          <span lang="en">Published under the Eclipse Public License 2.0 (EPL-2.0). Free to use, adapt, and extend for both commercial and private projects.</span>
+        </p>
+      </div>
+
+      <!-- Feature 2: Standard Compliance -->
+      <div class="feature-item" id="feature-std">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </div>
+        <h3 class="feature-title">
+          <span lang="de">IEC 61131-3</span>
+          <span lang="en">IEC 61131-3</span>
+        </h3>
+        <p class="feature-desc">
+          <span lang="de">Entwickelt nach dem internationalen Standard für speicherprogrammierbare Steuerungen. Konsistenter, bewährter Code für Ihre Steuerung.</span>
+          <span lang="en">Developed in accordance with the international standard for programmable logic controllers. Consistent, proven code for your systems.</span>
+        </p>
+      </div>
+
+      <!-- Feature 3: Hardware Independent -->
+      <div class="feature-item" id="feature-indep">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M9 9h6v6H9z"></path><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path></svg>
+        </div>
+        <h3 class="feature-title">
+          <span lang="de">Herstellerunabhängig</span>
+          <span lang="en">Platform Independent</span>
+        </h3>
+        <p class="feature-desc">
+          <span lang="de">Kompatibel mit allen gängigen IEC 61131-3 SPS-Plattformen (wie Beckhoff TwinCAT, Siemens TIA Portal/Codesys, Wago und Phoenix Contact).</span>
+          <span lang="en">Compatible with all major IEC 61131-3 PLC platforms (such as Beckhoff TwinCAT, Siemens TIA Portal/Codesys, Wago, and Phoenix Contact).</span>
+        </p>
+      </div>
+
+      <!-- Feature 4: Community Driven -->
+      <div class="feature-item" id="feature-comm">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <h3 class="feature-title">
+          <span lang="de">Seit 2006 aktiv</span>
+          <span lang="en">Active Since 2006</span>
+        </h3>
+        <p class="feature-desc">
+          <span lang="de">Eine offene, gewachsene Gemeinschaft von Ingenieuren und Entwicklern, die Praxiserfahrung in die Bibliotheken einbringen.</span>
+          <span lang="en">An open, grown community of automation engineers and developers bringing real-world expertise into the library code.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Libraries / Documentation Section -->
+    <section class="container" id="libraries" style="padding-top: 2rem;">
+      <div class="section-header scroll-reveal">
+        <span class="section-label">
+          <span lang="de">Bibliotheken</span>
+          <span lang="en">Libraries</span>
+        </span>
+        <h2 class="section-title">
+          <span lang="de">Dokumentation & Downloads</span>
+          <span lang="en">Documentation & Downloads</span>
+        </h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0 auto;">
+          <span lang="de">Die gesamte Dokumentation ist unter <strong><a href="https://oscat.readthedocs.io" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: none;">oscat.readthedocs.io</a></strong> verfügbar. Die Bibliotheken teilen sich in drei Kernbereiche auf:</span>
+          <span lang="en">All documentation is available at <strong><a href="https://oscat.readthedocs.io" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: none;">oscat.readthedocs.io</a></strong>. The libraries are divided into three main scopes:</span>
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        
+        <!-- Card 1: OSCAT Basic -->
+        <article class="lib-card basic scroll-reveal" id="card-basic">
+          <div class="lib-header">
+            <div class="lib-icon-wrapper" aria-hidden="true">
+              <!-- Plot/Function Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+            </div>
+            <h3 class="lib-title">OSCAT Basic</h3>
+            <p class="lib-desc">
+              <span lang="de">Mathematische Funktionen, komplexe Logik, String-Verarbeitung, Regelungstechnik, Datums- & Zeitkonvertierungen und vieles mehr.</span>
+              <span lang="en">Mathematical functions, complex logic, string processing, control engineering, date & time conversions, and much more.</span>
+            </p>
+          </div>
+          <a href="https://oscat-basic.readthedocs.io" target="_blank" rel="noopener" class="lib-link" id="link-basic">
+            <span lang="de">Dokumentation lesen</span>
+            <span lang="en">Read Documentation</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 2: OSCAT Network -->
+        <article class="lib-card network scroll-reveal delay-100" id="card-network">
+          <div class="lib-header">
+            <div class="lib-icon-wrapper" aria-hidden="true">
+              <!-- Network Nodes Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1.5"></rect><rect x="2" y="16" width="6" height="6" rx="1.5"></rect><rect x="9" y="2" width="6" height="6" rx="1.5"></rect><path d="M12 8v8M5 16v-4h14v4"></path></svg>
+            </div>
+            <h3 class="lib-title">OSCAT Network</h3>
+            <p class="lib-desc">
+              <span lang="de">Implementierungen von Netzwerkprotokollen (TCP/IP, HTTP, FTP, SMTP, SNTP), Web-Services-Anbindungen, XML/JSON-Parsing und Live-Wetterdaten.</span>
+              <span lang="en">Implementations of network protocols (TCP/IP, HTTP, FTP, SMTP, SNTP), web services integrations, XML/JSON parsing, and live weather data.</span>
+            </p>
+          </div>
+          <a href="https://oscat-network.readthedocs.io" target="_blank" rel="noopener" class="lib-link" id="link-network">
+            <span lang="de">Dokumentation lesen</span>
+            <span lang="en">Read Documentation</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 3: OSCAT Building -->
+        <article class="lib-card building scroll-reveal delay-200" id="card-building">
+          <div class="lib-header">
+            <div class="lib-icon-wrapper" aria-hidden="true">
+              <!-- Smart House Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3 class="lib-title">OSCAT Building</h3>
+            <p class="lib-desc">
+              <span lang="de">Heizung, Lüftung, Klima (HLK), hochkomplexe Jalousie- und Beschattungssteuerungen, Beleuchtungslogiken sowie Protokolle der Gebäudeautomation.</span>
+              <span lang="en">Heating, Ventilation, Air Conditioning (HVAC), complex blind and shading controls, lighting logics, and building automation protocols.</span>
+            </p>
+          </div>
+          <a href="https://oscat-building.readthedocs.io" target="_blank" rel="noopener" class="lib-link" id="link-building">
+            <span lang="de">Dokumentation lesen</span>
+            <span lang="en">Read Documentation</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contributing Section -->
+    <section class="container" id="contributing">
+      <div class="contributing-box scroll-reveal">
+        <h2 style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 800; letter-spacing: -0.8px;">
+          <span lang="de">🚀 Mitwirken & Community</span>
+          <span lang="en">🚀 Contributing & Community</span>
+        </h2>
+        <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 800px; font-size: 1.1rem; line-height: 1.7;">
+          <span lang="de">Wir freuen uns über Unterstützung! Ob durch das Melden von Fehlern (Bug-Reports), Code-Beiträge zur Bibliotheksentwicklung oder Verbesserungen an der Dokumentation – jede helfende Hand ist herzlich willkommen.</span>
+          <span lang="en">We welcome your support! Whether through bug reports, code contributions to library development, or improvements to the documentation – every bit of help is highly appreciated.</span>
+        </p>
+        
+        <div class="contributing-grid">
+          
+          <!-- Link 1: Source Code -->
+          <a href="https://github.com/eclipse-oscat" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-github">
+            <span class="contributing-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title">Source Code</span>
+              <span class="contributing-card-sub">github.com/eclipse-oscat</span>
+            </div>
+          </a>
+
+          <!-- Link 2: Forum -->
+          <a href="https://oscat.discourse.group/" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-forum">
+            <span class="contributing-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title">Community Forum</span>
+              <span class="contributing-card-sub">oscat.discourse.group</span>
+            </div>
+          </a>
+
+          <!-- Link 3: Eclipse IoT -->
+          <a href="https://projects.eclipse.org/projects/iot.oscat" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-eclipse">
+            <span class="contributing-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title">Eclipse Foundation</span>
+              <span class="contributing-card-sub">projects.eclipse.org/../iot.oscat</span>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+
+      <!-- License alert box -->
+      <div class="license-alert scroll-reveal" id="license-notice">
+        <div class="license-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        </div>
+        <div class="license-info">
+          <h3 class="license-title">
+            <span lang="de">⚖️ Lizenzierung</span>
+            <span lang="en">⚖️ Licensing</span>
+          </h3>
+          <p class="license-desc">
+            <span lang="de">Alle OSCAT-Bibliotheken und die dazugehörige Dokumentation stehen unter der <strong><a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Eclipse Public License 2.0 (EPL-2.0)</a></strong>.</span>
+            <span lang="en">All OSCAT libraries and documentation are available under the <strong><a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Eclipse Public License 2.0 (EPL-2.0)</a></strong>.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="footer-content">
+      <img src="img/oscatlogo_ohnetext_300ppi.jpg" alt="OSCAT Logo Small" class="footer-logo">
+      <div class="footer-brand">OSCAT</div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      
+      <p class="footer-text">
+        Copyright &copy; 2026 Hans Mühlbauer, Franz Höpfinger and others.<br>
+        OSCAT - Open Source Community for Automation Technology<br>
+        OSCAT® ist eine eingetragene Marke der Eclipse Foundation.<br>
+        Eclipse Foundation AISBL, Rond Point Schuman 11, 1040 Brüssel, Belgien.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Inline Script for language toggling & viewport trigger scroll animations -->
+  <script>
+    // Set Language toggle functionality
+    function setLanguage(lang) {
+      const body = document.body;
+      body.classList.remove('lang-de', 'lang-en');
+      body.classList.add(`lang-${lang}`);
+      
+      // Update HTML lang attribute
+      document.documentElement.setAttribute('lang', lang);
+      
+      // Save user preference
+      localStorage.setItem('oscat-lang', lang);
+      
+      // Update Active Button styling
+      document.querySelectorAll('.lang-toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+    }
+
+    // Auto-detect client preferred language on page load
+    (function initLanguage() {
+      const savedLang = localStorage.getItem('oscat-lang');
+      if (savedLang === 'de' || savedLang === 'en') {
+        setLanguage(savedLang);
+      } else {
+        // Fallback to system language
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang && userLang.toLowerCase().startsWith('de')) {
+          setLanguage('de');
+        } else {
+          setLanguage('en'); // Default to English
+        }
+      }
+    })();
+
+    // Viewport Intersection Observer for scroll reveal animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const revealElements = document.querySelectorAll('.scroll-reveal');
+      
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.12
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Stop observing once visible to maintain animation state
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealElements.forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
