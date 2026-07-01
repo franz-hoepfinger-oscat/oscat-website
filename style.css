@@ -35,6 +35,8 @@
   --color-network-glow: rgba(13, 148, 136, 0.06);
   --color-building: #d97706;
   --color-building-glow: rgba(217, 119, 6, 0.06);
+  --color-archive: #7c3aed;
+  --color-archive-glow: rgba(124, 58, 237, 0.06);
   
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -64,6 +66,8 @@
     --color-network-glow: rgba(20, 184, 166, 0.12);
     --color-building: #f59e0b;
     --color-building-glow: rgba(245, 158, 11, 0.12);
+    --color-archive: #a78bfa;
+    --color-archive-glow: rgba(167, 139, 250, 0.12);
   }
 }
 
@@ -412,6 +416,12 @@ body.lang-en [lang="de"] {
   --card-accent: var(--color-building);
   --card-accent-alpha: rgba(217, 119, 6, 0.4);
   background-image: radial-gradient(circle at 100% 100%, var(--color-building-glow) 0%, transparent 60%);
+}
+
+.lib-card.archive {
+  --card-accent: var(--color-archive);
+  --card-accent-alpha: rgba(124, 58, 237, 0.4);
+  background-image: radial-gradient(circle at 100% 100%, var(--color-archive-glow) 0%, transparent 60%);
 }
 
 .lib-header {
