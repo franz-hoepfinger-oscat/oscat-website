@@ -71,6 +71,74 @@
 
   <!-- Core Features Section -->
   <main class="container" id="main-content">
+    
+    <!-- Latest Announcement / News Section -->
+    <section class="news-section scroll-reveal" id="news-announcement">
+      <div class="news-card">
+        <span class="news-badge">
+          <span lang="de">Neuigkeit</span>
+          <span lang="en">Announcement</span>
+        </span>
+        <div class="news-meta">
+          <div class="news-meta-item">
+            <!-- Calendar Icon -->
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span lang="de">18. Juni 2026</span>
+            <span lang="en">June 18, 2026</span>
+          </div>
+          <div class="news-meta-item">
+            <!-- User Icon -->
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>OSCAT Core Team</span>
+          </div>
+        </div>
+        <h2 class="news-title">
+          <span lang="de">Das neue OSCAT-Forum ist live! 🌐</span>
+          <span lang="en">The new OSCAT Forum is live! 🌐</span>
+        </h2>
+        <div class="news-content">
+          <p lang="de">
+            Es ist vollbracht! Wir freuen uns, den Start unseres neuen OSCAT-Forums bekanntzugeben. Das bisherige Forum wurde offiziell durch eine moderne Discourse-Plattform unter <strong><a href="https://oscat.discourse.group/" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: underline; text-underline-offset: 0.15em;">oscat.discourse.group</a></strong> abgelöst. 
+          </p>
+          <p lang="en">
+            It is done! We are excited to announce the launch of our new OSCAT Community Forum. The previous forum has officially been replaced by a modern Discourse platform hosted at <strong><a href="https://oscat.discourse.group/" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: underline; text-underline-offset: 0.15em;">oscat.discourse.group</a></strong>.
+          </p>
+          
+          <p lang="de">Was sich ändert und was Sie wissen müssen:</p>
+          <p lang="en">What is changing and what you need to know:</p>
+          
+          <ul>
+            <li>
+              <span lang="de"><strong>Daten-Migration:</strong> Die bestehenden Beiträge und Diskussionen wurden – so gut es technisch machbar war – in das neue System migriert, um das über Jahre gesammelte Wissen unserer Automatisierungsgemeinschaft zu bewahren.</span>
+              <span lang="en"><strong>Data Migration:</strong> Existing posts and discussions have been migrated to the new system as best as possible, preserving the valuable automation knowledge built by our community over the years.</span>
+            </li>
+            <li>
+              <span lang="de"><strong>Sicherer Login via GitHub-Auth:</strong> Die Anmeldung läuft ab sofort direkt über die GitHub-Authentifizierung (GitHub OAuth). Dies bietet uns erheblich besseren Schutz vor Spam und Brute-Force-Angriffen und verbindet die Forums-Community nahtlos mit unserer aktiven Open-Source-Entwicklung.</span>
+              <span lang="en"><strong>Secure Login via GitHub Auth:</strong> Access is now authenticated directly via GitHub OAuth. This provides significantly better protection against spam and brute-force attempts while bridging forum discussions directly with our active open-source codebase development.</span>
+            </li>
+            <li>
+              <span lang="de"><strong>Modernes Diskussions-Interface:</strong> Discourse ermöglicht ein schnelles, mobiloptimiertes und durchsuchbares Lese- und Schreiberlebnis für Code-Snippets, Fragen und Anregungen.</span>
+              <span lang="en"><strong>Modern Discussion Interface:</strong> Discourse provides a fast, mobile-friendly, and searchable user experience, making reading code snippets, raising issues, and discussing automation concepts a joy.</span>
+            </li>
+          </ul>
+          
+          <p lang="de">
+            Melden Sie sich einfach mit Ihrem bestehenden GitHub-Account im neuen Forum an und helfen Sie mit, die Zukunft der offenen Automatisierungstechnik zu gestalten!
+          </p>
+          <p lang="en">
+            Simply sign in with your GitHub account on the new forum platform today and help us shape the future of open-source automation technology!
+          </p>
+        </div>
+        <div class="news-cta-row">
+          <a href="https://oscat.discourse.group/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-news-visit">
+            <span lang="de">Forum besuchen</span>
+            <span lang="en">Visit the Forum</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="features-container scroll-reveal">
       
       <!-- Feature 1: Open Source -->
@@ -262,6 +330,68 @@
             </div>
           </a>
 
+          <!-- Link 4: AixOCAT (Extern) -->
+          <a href="https://github.com/RWTH-EBC/AixOCAT" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-aixocat" style="border: 1px dashed rgba(2, 132, 199, 0.35);">
+            <span class="contributing-card-icon">
+              <!-- External Link Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                AixOCAT
+                <span style="font-size: 0.7rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                  <span lang="de">Extern</span>
+                  <span lang="en">External</span>
+                </span>
+              </span>
+              <span class="contributing-card-sub">
+                <span lang="de">Modelica-Portierung (RWTH EBC)</span>
+                <span lang="en">Modelica Port (RWTH EBC)</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Link 5: brOscatLib (Extern) -->
+          <a href="https://github.com/tkucic/brOscatLib" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-broscat" style="border: 1px dashed rgba(2, 132, 199, 0.35);">
+            <span class="contributing-card-icon">
+              <!-- External Link Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                brOscatLib
+                <span style="font-size: 0.7rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                  <span lang="de">Extern</span>
+                  <span lang="en">External</span>
+                </span>
+              </span>
+              <span class="contributing-card-sub">
+                <span lang="de">B&R Automation Portierung</span>
+                <span lang="en">B&R Automation Port</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Link 6: TcOscatBasic (Extern) -->
+          <a href="https://github.com/mihaiginta/TcOscatBasic" target="_blank" rel="noopener noreferrer" class="contributing-card" id="contrib-tcoscat" style="border: 1px dashed rgba(2, 132, 199, 0.35);">
+            <span class="contributing-card-icon">
+              <!-- External Link Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </span>
+            <div class="contributing-card-text">
+              <span class="contributing-card-title" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                TcOscatBasic
+                <span style="font-size: 0.7rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                  <span lang="de">Extern</span>
+                  <span lang="en">External</span>
+                </span>
+              </span>
+              <span class="contributing-card-sub">
+                <span lang="de">Beckhoff TwinCAT Portierung</span>
+                <span lang="en">Beckhoff TwinCAT Port</span>
+              </span>
+            </div>
+          </a>
 
         </div>
       </div>
